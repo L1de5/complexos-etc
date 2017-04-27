@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Posição</title>
+  </head>
+  <body>
+  </body>
+  <script>
+  function localization(localizacao){
+		var lat = localizacao.coords.latitude;
+		var long = localizacao.coords.longitude;
+		document.write('<p> Latitude: ' + lat + '</p>');
+		document.write('<p> Longitude: ' + long + '</p>');
+	}
+	navigator.geolocation.getCurrentPosition(localization);
+  </script>
+</html>
